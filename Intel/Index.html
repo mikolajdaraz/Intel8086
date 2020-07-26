@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intel 8086</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+    <script src="intel.js" defer></script>
+</head>
+
+<body>
+    <div class="window" id="winReg">
+        <div id="topBar">INTEL 8086</div>
+        <div id="regs">
+            AH AL<div class="reg">
+                <div data-reg='AH' class="regHigh oct"></div>
+                <div data-reg='AL' class="regLow oct"></div>
+            </div>
+            BH BL<div class="reg">
+                <div data-reg='BH' class="regHigh oct"></div>
+                <div data-reg='BL' class="regLow oct"></div>
+            </div>
+            CH CL<div class="reg">
+                <div data-reg='CH' class="regHigh oct"></div>
+                <div data-reg='CL' class="regLow oct"></div>
+            </div>
+            DH DL<div class="reg">
+                <div data-reg='DH' class="regHigh oct"></div>
+                <div data-reg='DL' class="regLow oct"></div>
+            </div>
+            BP<div data-reg='BP' class="regOut hex"></div>
+            SP<div data-reg='SP' class="regOut hex"></div>
+            SI<div data-reg='SI' class="regOut hex"></div>
+            DI<div data-reg='DI' class="regOut hex"></div>
+            CS<div data-reg='CS' class="regOut hex"></div>
+            SS<div data-reg='SS' class="regOut hex"></div>
+            DS<div data-reg='DS' class="regOut hex"></div>
+            ES<div data-reg='ES' class="regOut hex"></div>
+        </div>
+    </div>
+    <label for="adrBar">
+        <div class="console window">
+            <div class="clsLine"><span>></span>JS Intel 8086 MOV Simulator ver. 2.1.37;</div>
+            <div class="clsLine clsActive"><span>></span><input type="text" id="adrBar"></input></div>
+        </div>
+    </label>
+
+</html>

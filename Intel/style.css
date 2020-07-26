@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+
+body {
+    background-color: #208c71;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.window {
+    background-color: #8f8f8f;
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid #a3a3a3;
+    border-top: 3px solid #a3a3a3;
+    border-right: 3px solid #797979;
+    border-bottom: 3px solid #797979;
+    margin: 20px;
+}
+
+#winReg {
+    width: 300px;
+    height: auto;
+}
+
+#winMem {
+    width: 200px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+#topBar {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(0, 0, 167);
+    font-size: 32px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#regs {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.reg {
+    background-color: whitesmoke;
+    width: 90%;
+    height: 30px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.reg:nth-child(4) {
+    margin-bottom: 20px;
+}
+
+.regOut {
+    background-color: whitesmoke;
+    width: 95%;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.button {
+    width: 50px;
+    height: 30px;
+    background-color: rgb(107, 107, 107);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#adress,
+#mem {
+    /* background-color: red; */
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#adrBar:focus {
+    outline: none;
+}
+
+.console {
+    width: 400px;
+    height: 200px;
+    background-color: black;
+    color: green;
+    padding: 5px;
+    overflow-y: scroll;
+}
+
+.console::-webkit-scrollbar {
+    display: none;
+}
+
+.clsLine>input {
+    width: 95%;
+    height: 20px;
+    background-color: transparent;
+    border: 0px;
+    font-size: 18px;
+    color: green;
+}
+
+.clsActive>span {
+    animation-name: arAnim;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arAnim {
+    0% {
+        opacity: 1;
+    }
+
+    49% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width:800px) {
+    body {
+        flex-direction: column;
+    }
+}
